@@ -13,7 +13,6 @@ class SkyscraperQueue {
         arr = new int[maxSize];
     }
 
-    // ... rest of the code remains the same ...
     public boolean isFull() {
         if (rear == maxSize - 1) {
             return true;
