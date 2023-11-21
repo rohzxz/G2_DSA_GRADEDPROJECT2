@@ -5,12 +5,15 @@ import java.util.Scanner;
 class SkyscraperDivideWork {
     static int saved;
     Main main = new Main();
+    // Create a queue to store the floor sizes
     SkyscraperQueue queue = new SkyscraperQueue(Main.maxFloors);
 
+    // Constructor to take input for floor sizes
     public SkyscraperDivideWork() {
         takeInput();
     }
 
+    // Method to take input for floor sizes
     public void takeInput() {
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i <= Main.maxFloors; i++) {
@@ -20,10 +23,14 @@ class SkyscraperDivideWork {
         }
     }
 
+    // Method to manage the construction process
+
     public void service() {
         for (int j = 0; j < queue.arr.length; j++) {
             int k = j + 1;
             System.out.println("Day : " + k);
+
+            // If the current floor size matches the remaining floors to be built
 
             if (queue.arr[j] == Main.maxFloors) {
                 System.out.println(queue.arr[j]);

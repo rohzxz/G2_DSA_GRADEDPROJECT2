@@ -6,6 +6,8 @@ class SkyscraperQueue {
     int rear;
     int arr[];
 
+    // Constructor to initialize the queue
+
     public SkyscraperQueue(int sizeOfQueue) {
         this.maxSize = sizeOfQueue;
         front = -1;

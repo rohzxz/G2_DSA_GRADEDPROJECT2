@@ -9,6 +9,7 @@ class SkyscraperSearch {
             arr[i] = 0;
         }
     }
+    // Method to initialize array elements to zero
 
     public void search(int data) {
         for (j = 0; j < arr.length; j++) {
@@ -26,7 +27,7 @@ class SkyscraperSearch {
         SkyscraperSearch ss = new SkyscraperSearch();
         ss.arr[2] = 38;
         ss.search(38);
-
+        // Display the contents of the array
         for (int i1 = 0; i1 < ss.arr.length; i1++) {
             System.out.println(ss.arr[i1]);
         }
